@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="material_light_red">#F44336</color>
+    <color name="material_light_yellow">#FFEB3B</color>
+    <color name="material_light_blue">#71C3DE</color>
+    <color name="material_light_green">#4CAF50</color>
+    <color name="material_light_green_light">#64b367</color>
+    <color name="material_light_pink">#FF4081</color>
+    <color name="material_light_purple">#9C27B0</color>
+    <color name="material_light_black">#212121</color>
+    <color name="material_light_white">#ffffff</color>
+    <color name="material_light_grey">#aaaaaa</color>
+    <color name="material_light_transparent_black">#80000000</color>
+    <color name="material_light_transparent_black2">#99000000</color>
+    <color name="material_light_transparent_black80">#20000000</color>
+    <color name="custom">#0000</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="color_scheme_1_1">#33B5E5</color>
+    <color name="color_scheme_1_2">#99CC00</color>
+    <color name="color_scheme_1_3">#FFBB33</color>
+    <color name="color_scheme_1_4">#FF4444</color>
+
+    <color name="color_scheme_2_1">#6DCAEC</color>
+    <color name="color_scheme_2_2">#33B5E5</color>
+    <color name="color_scheme_2_3">#24ADDE</color>
+    <color name="color_scheme_2_4">#16A5D7</color>
+
+    <color name="color_scheme_3_1">#B6DB49</color>
+    <color name="color_scheme_3_2">#99CC00</color>
+    <color name="color_scheme_3_3">#8ABD00</color>
+    <color name="color_scheme_3_4">#7CAF00</color>
+
+
+</resources>

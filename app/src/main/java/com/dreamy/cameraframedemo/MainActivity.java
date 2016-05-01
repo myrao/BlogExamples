@@ -9,6 +9,8 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 
+import com.dreamy.cameraframedemo.util.ImageUtils;
+
 import java.io.IOException;
 
 public class MainActivity extends Activity implements SurfaceHolder.Callback,
@@ -21,12 +23,10 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback,
     private static final int SRC_FRAME_HEIGHT = 720;
     private static final int IMAGE_FORMAT = ImageFormat.YV12;
 
-
     private Camera mCamera;
     private Camera.Parameters mParams;
     private SurfaceView mSurfaceView;
     private SurfaceHolder mSurfaceHolder;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,11 +50,11 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback,
 
     @Override
     public void onClick(View v) {
-
     }
 
     @Override
     public void onPreviewFrame(byte[] data, Camera camera) {
+        ImageUtils.saveImageData(data);
         camera.addCallbackBuffer(data);
     }
 

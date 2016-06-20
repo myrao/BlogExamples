@@ -1,4 +1,4 @@
-package io.github.eterrao.androidmvp;
+package io.github.eterrao.androidmvp.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -31,6 +31,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import io.github.eterrao.androidmvp.R;
 
 import static android.Manifest.permission.READ_CONTACTS;
 

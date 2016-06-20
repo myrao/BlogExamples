@@ -9,9 +9,23 @@ import io.github.eterrao.androidmvp.utils.HttpUtils;
 public class LoginModel implements ILoginModel {
 
     @Override
-    public void sendMsg(String msg, OnLoginStatusListener onLoginStatusListener) {
+    public void sendMsg(String msg, final OnLoginStatusListener onLoginStatusListener) {
         // TODO: send your msg code to server
-        HttpUtils.doPostRequest();
+        String yoursUrl = "";
+        String key = "";
+        String value = "";
+        HttpUtils.doPostRequest(yoursUrl, new RequestCallbackable() {
+                    @Override
+                    public void requestSuccess(Object object) {
+                        onLoginStatusListener.onSendSuccess();
+                    }
+
+                    @Override
+                    public void requestError(Object object) {
+                        onLoginStatusListener.onSendError();
+                    }
+                },
+                key, value /*key1, value1, key2, value2...*/);
     }
 
     @Override

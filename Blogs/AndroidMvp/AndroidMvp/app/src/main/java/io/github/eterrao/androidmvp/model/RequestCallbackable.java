@@ -3,9 +3,9 @@ package io.github.eterrao.androidmvp.model;
 /**
  * Created by raomengyang on 6/21/16.
  */
-public interface RequestCallbackable {
+public interface RequestCallbackable<T> {
 
-    void requestSuccess();
+    void requestSuccess(T object);
 
-    void requestError();
+    void requestError(T object);
 }

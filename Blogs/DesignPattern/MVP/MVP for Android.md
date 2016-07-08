@@ -70,6 +70,18 @@ MVC不在此做更多的说明了，请大家自行查阅资料吧，接下来�
 - activity : 其实我想把activity放在view文件夹中的，但感觉还是单独放比较清晰
 
 
+注意内存泄露的问题
+
+- 由于通过V(View)传递给Presenter，在Activity被销毁后，Presenter依旧持有View的引用，导致Activity的实例没有被释放造成的内存泄露，所以使用View的弱引用传递给Presenter持有，代码如下：
+
+  ```java
+
+  ```
+
+  ​
+
+​	
+
 
 
 
